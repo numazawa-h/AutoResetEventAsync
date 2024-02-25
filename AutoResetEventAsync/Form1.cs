@@ -35,7 +35,7 @@ namespace AutoResetEventAsync
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-            _event.Reset();
+            _event.Reset(true, chk_KeepOrder.Checked);
             no = 0;
         }
 
