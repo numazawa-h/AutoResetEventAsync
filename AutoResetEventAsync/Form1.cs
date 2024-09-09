@@ -13,7 +13,7 @@ namespace AutoResetEventAsync
     public partial class Form1 : Form
     {
         int no = 0;
-        AutoResetEventAsync _event = new AutoResetEventAsync(true);
+        AutoResetEventAsync _event = new AutoResetEventAsync();
         public Form1()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace AutoResetEventAsync
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-            _event.Reset(true, chk_KeepOrder.Checked);
+            _event.Reset(chk_InitSet.Checked, chk_KeepOrder.Checked);
             no = 0;
         }
 

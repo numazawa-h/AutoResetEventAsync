@@ -34,6 +34,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.chk_KeepOrder = new System.Windows.Forms.CheckBox();
+            this.chk_InitSet = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btn_Set
@@ -86,18 +87,29 @@
             // chk_KeepOrder
             // 
             this.chk_KeepOrder.AutoSize = true;
-            this.chk_KeepOrder.Location = new System.Drawing.Point(27, 97);
+            this.chk_KeepOrder.Location = new System.Drawing.Point(27, 85);
             this.chk_KeepOrder.Name = "chk_KeepOrder";
             this.chk_KeepOrder.Size = new System.Drawing.Size(149, 28);
             this.chk_KeepOrder.TabIndex = 5;
             this.chk_KeepOrder.Text = "KeepOrder";
             this.chk_KeepOrder.UseVisualStyleBackColor = true;
             // 
+            // chk_InitSet
+            // 
+            this.chk_InitSet.AutoSize = true;
+            this.chk_InitSet.Location = new System.Drawing.Point(27, 131);
+            this.chk_InitSet.Name = "chk_InitSet";
+            this.chk_InitSet.Size = new System.Drawing.Size(107, 28);
+            this.chk_InitSet.TabIndex = 6;
+            this.chk_InitSet.Text = "InitSet";
+            this.chk_InitSet.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 259);
+            this.Controls.Add(this.chk_InitSet);
             this.Controls.Add(this.chk_KeepOrder);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.textBox1);
@@ -119,6 +131,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.CheckBox chk_KeepOrder;
+        private System.Windows.Forms.CheckBox chk_InitSet;
     }
 }
 
