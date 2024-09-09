@@ -29,11 +29,11 @@ namespace AutoResetEventAsync
             int n = ++no;
             if(await _event.Wait())
             {
-                this.textBox1.Text = $"Fire{n}";
+                this.textBox1.Text = this.textBox1.Text+$"Fire{n}\r\n";
             }
             else
             {
-                this.textBox1.Text = $"Cancel{n}";
+                this.textBox1.Text = this.textBox1.Text+$"Cancel{n}\r\n";
             }
         }
 
