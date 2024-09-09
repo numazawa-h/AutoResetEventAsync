@@ -27,6 +27,7 @@ namespace AutoResetEventAsync
         private async void btn_Await_Click(object sender, EventArgs e)
         {
             int n = ++no;
+            this.lbl_AwaitNo.Text = n.ToString();
             if(await _event.Wait())
             {
                 this.textBox1.Text = this.textBox1.Text+$"Fire{n}\r\n";
@@ -41,6 +42,7 @@ namespace AutoResetEventAsync
         {
             _event.Reset(chk_InitSet.Checked, chk_KeepOrder.Checked);
             no = 0;
+            this.lbl_AwaitNo.Text = no.ToString();
             this.textBox1.Text = "";
         }
 

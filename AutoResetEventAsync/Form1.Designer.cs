@@ -36,8 +36,10 @@
             this.chk_KeepOrder = new System.Windows.Forms.CheckBox();
             this.chk_InitSet = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lbl_AwaitNo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -124,6 +126,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lbl_AwaitNo);
             this.panel1.Controls.Add(this.chk_KeepOrder);
             this.panel1.Controls.Add(this.chk_InitSet);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -131,6 +135,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(601, 56);
             this.panel1.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(352, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 24);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Await No.";
             // 
             // panel2
             // 
@@ -152,6 +165,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(457, 225);
             this.panel3.TabIndex = 9;
+            // 
+            // lbl_AwaitNo
+            // 
+            this.lbl_AwaitNo.AutoSize = true;
+            this.lbl_AwaitNo.Location = new System.Drawing.Point(463, 17);
+            this.lbl_AwaitNo.Name = "lbl_AwaitNo";
+            this.lbl_AwaitNo.Size = new System.Drawing.Size(22, 24);
+            this.lbl_AwaitNo.TabIndex = 11;
+            this.lbl_AwaitNo.Text = "0";
             // 
             // Form1
             // 
@@ -184,6 +206,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_AwaitNo;
     }
 }
 
