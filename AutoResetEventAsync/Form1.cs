@@ -31,12 +31,17 @@ namespace AutoResetEventAsync
             {
                 this.textBox1.Text = $"Fire{n}";
             }
+            else
+            {
+                this.textBox1.Text = $"Cancel{n}";
+            }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
             _event.Reset(chk_InitSet.Checked, chk_KeepOrder.Checked);
             no = 0;
+            this.textBox1.Text = "";
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
